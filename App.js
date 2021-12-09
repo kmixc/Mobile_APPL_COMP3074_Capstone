@@ -1,12 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+import Signup from './components/Signup'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.deleteLater}>
+        <Text>Add Top Navbar with navigation</Text>
+        <Text>if statment checking if already logged in send to Home.jsx screen</Text>
+        <Text>also if already signed up send to login</Text>
+      </View>
+
+      <Signup />
+
     </View>
   );
 }
@@ -18,4 +24,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  deleteLater: {
+    padding: "50px",
+  }
 });
