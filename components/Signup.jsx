@@ -1,6 +1,14 @@
 import React, { useState } from 'react'
 import { StyleSheet, View, Text, Image, TextInput, Button, TouchableOpacity } from 'react-native';
-let Logo = require('../src/logo.png')
+
+function Logo() {
+    return (
+        <Image
+            style={{ width: 150, height: 150 }}
+            source={require('../src/logo.png')}
+        />
+    )
+}
 
 export default function Signup() {
     const [email, setEmail] = useState('')
@@ -10,8 +18,8 @@ export default function Signup() {
         <View style={styles.signUpContainer}>
 
             <View style={styles.signUpTop}>
-                <Image source={Logo} />
-                <Text>Sign up here</Text>
+                <Logo />
+                <Text style={styles.signUpTopText}>Sign up here</Text>
             </View>
 
             <View style={styles.inputView}>
@@ -45,8 +53,12 @@ export default function Signup() {
 
 const styles = StyleSheet.create({
     signUpTop: {
+        textAlign: 'center',
+        marginBottom: 30
+    },
+
+    signUpTopText: {
         padding: 10,
-        marginBottom: 20,
     },
 
     signUpContainer: {
