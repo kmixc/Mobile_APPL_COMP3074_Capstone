@@ -12,3 +12,9 @@
 ### This is the first version of iSolve Connect Application Built with React Native.
 About iSolve (more to come...) <br />
 About Native and iSove (more to come...) <br />
+
+## NPM i Commands
+npm i @react-navigation/native <br />
+npm i react-native-screens react-native-safe-area-context <br />
+npm i @react-navigation/native-stack <br />
+npm i @react-navigation/bottom-tabs <br />
